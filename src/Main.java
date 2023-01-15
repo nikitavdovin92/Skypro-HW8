@@ -73,6 +73,39 @@ public class Main {
         }
         //Задача 6
         System.out.println("Задача 6");
+        int startMoney3 = 15000;
+        int month3 = 0;
+        while (startMoney3 < 20_900_000) {
+            startMoney3 = (startMoney3 * 107) / 100;
+            month3++;
+            if (month3 % 6 == 0 && month3 <= 108) {
+                System.out.println("Месяц " + month3 + "- сумма накоплений " + startMoney3);
+            }
+            System.out.println(month3);
+
+        }
+        //Задача 7
+        System.out.println("Задача 7");
+        int firstFriday = 2;
+        for (int friday = firstFriday; friday <= 31; friday += 7 ) {
+            System.out.println("Сегодня пятница- " + friday + "-е число. Необходимо подготовить отчёт");
+        }
+        //Задача 8
+        System.out.println("Задача 8");
+        int currentYear = 2023;
+        int starting = currentYear - 200;
+        int end = currentYear + 100;
+        int period = 79;
+        int firstTimeAppeared = 0;
+        for (int years = starting; years <= end; years++) {
+            if (years % period == firstTimeAppeared) {
+                System.out.println(years);
+            }
+
+        }
+
+
+
 
 
 
